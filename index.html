@@ -1,6 +1,36 @@
 <html>
     
-    <head></head>
+    <head>
+
+            
+        <script type='text/javascript'>
+            (function () {
+                var secciones = window.location.pathname.split('/');
+    
+                /** CONFIGURATION START **/
+                var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+    
+                _sf_async_config.uid = 66074 //CHANGE THIS
+                _sf_async_config.domain = 'convoca.pe'; //CHANGE THIS
+                _sf_async_config.flickerControl = false;
+                _sf_async_config.useCanonical = true;
+                _sf_async_config.useCanonicalDomain = true;
+                _sf_async_config.sections = "reto-covid-19"; //CHANGE THIS TO YOUR SECTION NAME(s)
+                _sf_async_config.authors = 'elvis rivera'; //CHANGE THIS TO YOUR AUTHOR NAME(s)
+                /** CONFIGURATION END **/
+                function loadChartbeat() {
+                    var e = document.createElement('script');
+                    var n = document.getElementsByTagName('script')[0];
+                    e.type = 'text/javascript';
+                    e.async = true;
+                    e.src = '//static.chartbeat.com/js/chartbeat.js';
+                    n.parentNode.insertBefore(e, n);
+                }
+                loadChartbeat();
+            })();
+        </script>
+
+    </head>
     <body>
         cargando...
     </body>
